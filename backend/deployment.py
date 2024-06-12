@@ -5,7 +5,7 @@ from .settings import BASE_DIR
 SECRET_KEY = os.environ.get('SECRET')
 ALLOWED_HOSTS = [os.environ.get('WEBSITE_HOSTNAME')]
 CSRF_TRUSTED_ORIGINS = ['https://' + os.environ.get('WEBSITE_HOSTNAME'), 'http://' + os.environ.get('WEBSITE_HOSTNAME')]
-DEBUG = True
+DEBUG = False
 
 MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
