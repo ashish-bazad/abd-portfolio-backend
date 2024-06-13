@@ -222,6 +222,8 @@ def initialize(stocks_list, start_date, end_date, benchmark_ticker, market_ticke
     result_dict['correlation_matrix'] = correlation_matrix
     result_dict['date'] = portfolio_value.reset_index()['Date']
     result_dict['capital_gain_per'] = (stock_prices.iloc[-1,:] / stock_prices.iloc[0,:] - 1)*100
+    result_dict['market_ticker'] = market_ticker
+    result_dict['benchmark_ticker'] = benchmark_ticker
 
     return result_dict
 
@@ -358,6 +360,8 @@ def equal_weighting(stocks_list, start_date, end_date, benchmark_ticker, market_
     result_dict['correlation_matrix'] = correlation_matrix
     result_dict['date'] = portfolio_value.reset_index()['Date']
     result_dict['capital_gain_per'] = (stock_prices.iloc[-1,:] / stock_prices.iloc[0,:] - 1)*100
+    result_dict['market_ticker'] = market_ticker
+    result_dict['benchmark_ticker'] = benchmark_ticker
     
     return result_dict
 
@@ -498,5 +502,7 @@ def risk_parity(stocks_list, start_date, end_date, benchmark_ticker, market_tick
     result_dict['correlation_matrix'] = correlation_matrix
     result_dict['date'] = portfolio_value.reset_index()['Date']
     result_dict['capital_gain_per'] = (stock_prices.iloc[-1,:] / stock_prices.iloc[0,:] - 1)*100
+    result_dict['market_ticker'] = market_ticker
+    result_dict['benchmark_ticker'] = benchmark_ticker
 
     return result_dict
