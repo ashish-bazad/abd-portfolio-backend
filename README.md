@@ -4,7 +4,7 @@ Backend for ABD Portfolio
 ### Local System Deployment Commands
 ```yaml
 git clone https://github.com/ashish-bazad/abd-portfolio-backend.git
-cd abd-portfolio-backend.git
+cd abd-portfolio-backend
 virtualenv env
 source env/bin/activate
 brew install postgresql
