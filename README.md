@@ -9,6 +9,6 @@ virtualenv env
 source env/bin/activate
 brew install postgresql
 brew install gcc
-pip install -r requirements.txt
+pip install -r req.txt
 python3 manage.py runserver 127.0.0.1:8000
 ```
